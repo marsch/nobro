@@ -1,0 +1,31 @@
+{
+  "name": "nobro",
+  "version": "1.0.0",
+  "description": "Prevent brothers and sisters from falling to the dark side by robbing their npm-workflow virginity",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "nobro": "bin/nobro"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/marsch/nodarkside.git"
+  },
+  "keywords": [
+    "buildtool",
+    "git"
+  ],
+  "author": "Mario Scheliga",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marsch/nodarkside/issues"
+  },
+  "homepage": "https://github.com/marsch/nodarkside#readme",
+  "dependencies": {
+    "image-to-ascii": "3.0.3",
+    "play-sound": "0.0.9",
+    "say": "0.9.0"
+  }
+}

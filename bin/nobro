@@ -1,0 +1,26 @@
+#! /usr/bin/env node
+var child_process = require('child_process')
+var player = require('play-sound')(opts = {})
+var imageToAscii = require("image-to-ascii")
+var say = require('say')
+var path = require('path')
+// checks master ahead   current ahead
+var check_master = 'git rev-list --left-right --count origin/master...'
+
+// 0 - origin/master ahead
+// 1 - current branch
+var check_result = child_process.execSync(check_master).toString('utf-8').replace(/\n/,'').split('\t')
+
+
+if(check_result[0] > 20 ) {
+  imageToAscii(path.join(__dirname, '..', 'assets', 'darthvader-design.jpg'), {size: {height: '70%'}}, (err, converted) => {
+    console.log(err || converted);
+    player.play(path.join(__dirname, '..', 'assets', 'tooobad.mp3'), function(err){ console.log(err); process.exit(1); })
+
+    say.speak('You badass! Do ya think syncing is for pussies?', 'Deranged', 1.5);
+
+    console.log('You are over 20 commits behind origin/master (actually '+ check_result[0] +')')
+  });
+} else {
+  process.exit(0);
+}
