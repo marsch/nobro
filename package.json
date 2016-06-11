@@ -1,6 +1,6 @@
 {
   "name": "nobro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Prevent brothers and sisters from falling to the dark side by robbing their npm-workflow virginity",
   "main": "index.js",
   "scripts": {
