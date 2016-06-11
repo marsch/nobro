@@ -24,3 +24,5 @@ In the script section of `package.json` just do the following:
 ```
 
 If your buddy is behind 20 commits, it would just displays a pic of darth vader, plays imperial march and says something like he can't go on if he wouldn't sync. Thats annoying but can safe hours or even days with merge-conflicting the shit out of your project. :D
+
+![alt tag](https://raw.githubusercontent.com/marsch/nobro/master/sample.png)
