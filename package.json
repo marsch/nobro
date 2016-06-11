@@ -1,6 +1,6 @@
 {
   "name": "nobro",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Prevent brothers and sisters from falling to the dark side by robbing their npm-workflow virginity",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/marsch/nodarkside.git"
+    "url": "https://github.com/marsch/nobro"
   },
   "keywords": [
     "buildtool",
